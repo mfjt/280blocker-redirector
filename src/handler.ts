@@ -9,9 +9,8 @@ export async function handleRequest(request: Request): Promise<Response> {
   }
 
   let extensionIndex: number = filename.lastIndexOf('.')
-  let extension: string = extensionIndex >= 0
-    ? filename.slice(extensionIndex)
-    : ''
+  let extension: string =
+    extensionIndex >= 0 ? filename.slice(extensionIndex) : ''
   let baseName: string = extension
     ? filename.slice(0, -extension.length)
     : filename

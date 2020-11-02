@@ -12,7 +12,7 @@ describe('handler returns response with request method', () => {
   })
 
   afterEach(function () {
-    sandbox.restore();
+    sandbox.restore()
   })
 
   const URI_BASE = 'https://280blocker.net/files/'
